@@ -3,62 +3,90 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #EABDCF;
+  background-color: #EABDCF; /* Primary background color */
 }
 
-.header {
-  background-color: #6FC7E1;
+header {
+  background-color: #CE6EA3; /* Header background color */
+  color: white;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
 }
 
 .logo img {
-  height: 50px;
+  max-height: 50px;
 }
 
-.nav-links {
+nav ul {
   list-style: none;
-  display: flex;
-  gap: 1rem;
+  padding: 0;
 }
 
-.nav-links li a {
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #EFD557;
-}
-
-.main-content {
+main {
   padding: 2rem;
 }
 
-.service-card, .project-card, .research-card {
-  border: 1px solid #CE6EA3;
+.hero {
+  text-align: center;
+  background-color: #EFD557; /* Hero section background color */
+  padding: 4rem 0;
+}
+
+.cta-button {
+  background-color: #EB6F46; /* CTA button background color */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #A72218; /* Hover color for CTA button */
+}
+
+.about-us,
+.services,
+.projects,
+.research,
+.contact,
+.payment {
+  background-color: #E9E7E0; /* Secondary background color */
+  padding: 2rem;
+}
+
+.service-card,
+.project-card,
+.research-card {
+  background-color: #E3C5B2; /* Card background color */
   padding: 1rem;
-  margin: 1rem 0;
-  background-color: #E9E7E0;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
-.contact-info {
-  margin-bottom: 2rem;
-}
-
-.google-map iframe {
+.map iframe {
   width: 100%;
-  max-width: 600px;
   height: 400px;
 }
 
-.footer {
-  background-color: #CE6EA3;
+footer {
+  background-color: #CE6EA3; /* Footer background color */
+  color: white;
   text-align: center;
   padding: 1rem;
-  color: #fff;
 }
