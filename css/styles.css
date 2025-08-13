@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EABDCF;
+}
+
+.header {
+  background-color: #6FC7E1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #EFD557;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.service-card, .project-card, .research-card {
+  border: 1px solid #CE6EA3;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #E9E7E0;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.google-map iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+}
+
+.footer {
+  background-color: #CE6EA3;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
