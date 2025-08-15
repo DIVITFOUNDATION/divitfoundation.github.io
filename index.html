@@ -59,6 +59,44 @@
              flex-wrap: nowrap;
         }
         
+        /* Logo Styles */
+    .logo img {
+    display: block;
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+    .sports-logo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+  .sports-logo img {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    object-fit: contain;
+}
+
+   .sports-logo p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color8);
+}
+
+/* Debugging styles - remove after verification */
+     #divit-logo, #borjhar-logo {
+    border: 2px solid red !important;
+    background-color: rgba(255, 0, 0, 0.1) !important;
+}
+        
         .logo {
             display: flex;
             align-items: center;
@@ -700,7 +738,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src=images/"divit-foundation-logo.png" alt="Divit Foundation Logo">
+                 <img src="images/divit-logo.png" alt="Divit Foundation Logo" id="divit-logo">
     <circle cx="40" cy="25" r="20" fill="#EB6F46"/>
     <text x="70" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Divit Foundation</text>
 </svg>
@@ -796,7 +834,8 @@
                     <p>We host regular events, marathons, and adventure camps for all age groups.</p>
                     <div class="sports-logo">
                         <div class="sports-logo">
-                   <img src=images/"borjhar-sports-club-logo.jpg" alt="Borjhar Sports Club">
+                   <img src="images/borjhar-logo.jpg" alt="Borjhar Sports Club Logo" id="borjhar-logo">
+                   <p>Borjhar Sports Club</p>
                     <rect x="10" y="5" width="30" height="30" fill="#44A7C7"/>
                     <text x="50" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Borjhar Sports Club</text>
     </svg>
@@ -983,7 +1022,7 @@
     <footer>
         <div class="footer-content">
             <div class="logo">
-                 <img src=images/"divit-foundation-logo.png" alt="Divit Foundation Logo">
+                  <img src="images/divit-logo.png" alt="Divit Foundation Logo" id="divit-logo">
         <circle cx="40" cy="25" r="20" fill="#FFFFFF"/>
         <text x="70" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#FFFFFF">Divit Foundation</text>
     </svg>
