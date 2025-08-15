@@ -50,12 +50,13 @@
         }
         
         .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             max-width: 1200px;
+             margin: 0 auto;
+             padding: 0 20px;
+             flex-wrap: nowrap;
         }
         
         .logo {
@@ -563,6 +564,7 @@
         }
         
         /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 992px) {
     .about-content {
         flex-direction: column;
@@ -572,6 +574,7 @@
         margin-top: 20px;
     }
     
+    /* Add logo scaling for tablet */
     .logo svg {
         width: 280px;
     }
@@ -611,28 +614,33 @@
         font-size: 2rem;
     }
     
+    /* Header alignment fixes */
+    .header-container {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        width: 70%;
+    }
+    
+    .mobile-menu-btn {
+        width: 30%;
+        text-align: right;
+    }
+    
+    nav {
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+    }
+    
     .logo svg {
         width: 250px;
     }
     
     .logo h1 {
         display: none;
-    }
-    
-    /* Header container adjustments */
-    .header-container {
-        flex-wrap: wrap;
-    }
-    .logo {
-        order: 1;
-        flex: 1;
-    }
-    .mobile-menu-btn {
-        order: 2;
-    }
-    nav {
-        order: 3;
-        width: 100%;
     }
 }
 
@@ -653,8 +661,19 @@
         padding: 20px;
     }
     
+    /* Mobile logo sizing */
+    .logo {
+        width: 60%;
+    }
+    
+    .mobile-menu-btn {
+        width: 40%;
+    }
+    
     .logo svg {
         width: 200px;
+    }
+}
     }
 }
     }
