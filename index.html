@@ -63,11 +63,17 @@
             align-items: center;
         }
         
-        .logo img {
-            height: 50px;
-            margin-right: 15px;
+        .logo img, .logo svg {
+           height: 50px;
+           margin-right: 15px;
+           width: auto;
         }
-        
+
+        .logo svg text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+         }   
+
         .logo h1 {
             font-size: 1.8rem;
             color: var(--color5);
@@ -264,8 +270,9 @@
             text-align: center;
         }
         
-        .sports-logo img {
-            height: 80px;
+        .sports-logo img, .sports-logo svg {
+           height: 80px;
+           width: auto;
         }
         
         /* Projects Section */
@@ -570,6 +577,25 @@
             .payment-container {
                 padding: 20px;
             }
+
+            @media (max-width: 992px) {
+               .logo svg {
+             width: 280px;
+
+             .logo svg {
+        width: 250px;
+    }
+    
+    .logo h1 {
+        display: none; /* Hide text logo on mobile */
+    }
+}
+
+      @media (max-width: 480px) {
+          .logo svg {
+         width: 200px;
+    }
+}
         }
     </style>
 </head>
@@ -578,7 +604,10 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNTAiPjxwYXRoIGZpbGw9IiNFQjZGNEE2IiBkPSJNNDAgMTBDMjAgMTAgMTAgMjAgMTAgNDBzMTAgMzAgMzAgMzAgMzAtMTAgMzAtMzBTNjAgMTAgNDAgMTB6Ii8+PHRleHQgeD0iODAiIHk9IjM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzMzIj5EaXZpdCBGb3VuZGF0aW9uPC90ZXh0Pjwvc3ZnPg==" alt="Divit Foundation Logo">
+                <svg width="350" height="50" viewBox="0 0 350 50" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="40" cy="25" r="20" fill="#EB6F46"/>
+    <text x="70" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Divit Foundation</text>
+</svg>
             </div>
             <nav>
                 <ul id="navMenu">
@@ -670,7 +699,10 @@
                     <p>Under our brand Borjhar Sports Club, we organize various sporting activities, especially cycling, running, and adventure sports. Our programs promote fitness, teamwork, and community bonding.</p>
                     <p>We host regular events, marathons, and adventure camps for all age groups.</p>
                     <div class="sports-logo">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgNTAiPjxwYXRoIGZpbGw9IiM0NEE3QzciIGQ9Ik0xMCAxMEg0MFY0MEgxMFYxMHoiLz48dGV4dCB4PSI1MCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPkJvcmpoYXIgU3BvcnRzIENsdWI8L3RleHQ+PC9zdmc+" alt="Borjhar Sports Club">
+                        <<svg width="280" height="50" viewBox="0 0 280 50" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="30" height="30" fill="#44A7C7"/>
+    <text x="50" y="35" font-family="Arial" font-size="20" font-weight="bold" fill="#333">Borjhar Sports Club</text>
+</svg>
                     </div>
                 </div>
             </div>
@@ -851,7 +883,10 @@
     <footer>
         <div class="footer-content">
             <div class="logo">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNTAiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik00MCAxMEgyMFY0MEg0MFYxMHoiLz48dGV4dCB4PSI2MCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPkRpdml0IEZvdW5kYXRpb248L3RleHQ+PC9zdmc+" alt="Divit Foundation Logo">
+                 <svg width="350" height="50" viewBox="0 0 350 50" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="25" r="20" fill="#FFFFFF"/>
+        <text x="70" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#FFFFFF">Divit Foundation</text>
+    </svg>
             </div>
             <p>Empowering Communities Through Sustainable Development</p>
             <div class="social-links">
