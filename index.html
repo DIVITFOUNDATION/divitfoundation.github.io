@@ -272,8 +272,8 @@
         
         .sports-logo img, .sports-logo svg {
            height: 80px;
-           width: auto;      }        
-           max-width: 100%;
+            width: 100%;
+           max-width: 280px;
            overflow: visible;
         }  
         /* Projects Section */
@@ -562,39 +562,101 @@
             }
         }
         
-        @media (max-width: 480px) {
-            .hero-content h2 {
-                font-size: 2rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .contact-container {
-                gap: 20px;
-            }
-            
-            .payment-container {
-                padding: 20px;
-            }
+        /* Responsive Design */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        margin-top: 20px;
+    }
+    
+    .logo svg {
+        width: 280px;
+    }
+}
 
-            @media (max-width: 992px) {
-               .logo svg {
-             width: 280px;
-
-             .logo svg {
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .logo svg {
         width: 250px;
     }
     
     .logo h1 {
-        display: none; /* Hide text logo on mobile */
+        display: none;
+    }
+    
+    /* Header container adjustments */
+    .header-container {
+        flex-wrap: wrap;
+    }
+    .logo {
+        order: 1;
+        flex: 1;
+    }
+    .mobile-menu-btn {
+        order: 2;
+    }
+    nav {
+        order: 3;
+        width: 100%;
     }
 }
 
-      @media (max-width: 480px) {
-          .logo svg {
-         width: 200px;
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-container {
+        gap: 20px;
+    }
+    
+    .payment-container {
+        padding: 20px;
+    }
+    
+    .logo svg {
+        width: 200px;
+    }
+}
     }
 }
         }
@@ -700,9 +762,12 @@
                     <p>Under our brand Borjhar Sports Club, we organize various sporting activities, especially cycling, running, and adventure sports. Our programs promote fitness, teamwork, and community bonding.</p>
                     <p>We host regular events, marathons, and adventure camps for all age groups.</p>
                     <div class="sports-logo">
-                        <svg viewBox="0 0 300 40" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="5" width="30" height="30" fill="#44A7C7"/>
-        <text x="50" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Borjhar Sports Club</text>
+                        <div class="sports-logo">
+                    <svg viewBox="0 0 320 40" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="5" width="30" height="30" fill="#44A7C7"/>
+                    <text x="50" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Borjhar Sports Club</text>
+    </svg>
+</div>
     </svg>
 </svg>
                     </div>
