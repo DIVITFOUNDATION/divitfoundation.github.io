@@ -111,25 +111,28 @@
         }
         
         nav ul {
-            display: flex;
-            list-style: none;
-            gap: 5px;
+           display: flex;
+           list-style: none;
+           gap: 20px; 
+           flex-wrap: nowrap;
+           justify-content: center;
         }
         
         nav li {
-            margin-left: 10px;
+            margin: 0; 
         }
         
         nav a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            padding: 12px 20px;
-            border-radius: 50px;
-            position: relative;
-            overflow: hidden;
+        text-decoration: none;
+         color: var(--dark);
+         font-weight: 600;
+         font-size: 1.1rem;
+         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        padding: 12px 20px;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
         }
         
         nav a::before {
