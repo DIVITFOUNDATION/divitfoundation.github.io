@@ -63,12 +63,14 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 30px;
+            flex-wrap: wrap;
         }
         
         .logo-container {
             display: flex;
             align-items: center;
             gap: 15px;
+            max-width: 40%;
         }
         
         .logo {
@@ -112,8 +114,14 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 5px;
-        }
+            gap: 10px; /* Increased gap */
+            align-items: center; /* Vertically center items */
+            justify-content: center; /* Horizontally center items */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            nav {
+            flex: 1; /* Take available space */
+            min-width: 60%; 
+}
         
         nav li {
             margin-left: 10px;
@@ -121,15 +129,17 @@
         
         nav a {
             text-decoration: none;
-            color: var(--dark);
+            color: var(--black);
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            padding: 12px 20px;
+            padding: 10px 15px; /* Reduced padding */
             border-radius: 50px;
             position: relative;
             overflow: hidden;
-        }
+            white-space: nowrap; /* Prevent text wrapping */
+            display: inline-block; /* Better alignment control */
+}
         
         nav a::before {
             content: '';
@@ -868,19 +878,31 @@
         }
         
         @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                position: fixed;
-                top: 100px;
-                left: 0;
-                width: 100%;
-                background: var(--light);
-                flex-direction: column;
-                padding: 20px 0;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-                z-index: 1000;
-                gap: 0;
-            }
+           nav ul {
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: var(--light);
+        flex-direction: column;
+        padding: 10px 0; /* Reduced padding */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        z-index: 1000;
+        gap: 0;
+        text-align: center; /* Center align items */
+    }
+    
+    nav li {
+        width: 100%; /* Make list items full width */
+    }
+    
+    nav a {
+        display: block; /* Make links block level */
+        width: 100%;
+        padding: 12px 0; /* Vertical padding only */
+        border-radius: 0; /* Remove rounded corners */
+    }
             
             nav ul.show {
                 display: flex;
