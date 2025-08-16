@@ -66,6 +66,43 @@
             padding: 0 30px;
         }
         
+        .logo img {
+         display: block;
+         height: 60px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+}
+
+    .sports-logo {
+      margin-top: 20px;
+      text-align: center;
+}
+
+    .sports-logo img {
+     display: block;
+     margin: 0 auto;
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    object-fit: contain;
+}
+
+     .sports-logo p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color8);
+}
+
+/* Debugging styles - remove after verification */
+#divit-logo, #borjhar-logo {
+    border: 2px solid red !important;
+    background-color: rgba(255, 0, 0, 0.1) !important;
+}
+        
         .logo-container {
             display: flex;
             align-items: center;
@@ -997,7 +1034,7 @@
         <div class="header-container">
             <div class="logo-container">
                 <div class="logo">
-                    <i class="fas fa-hands-helping" style="font-size: 2.5rem; color: white;"></i>
+                    <img src="images/divit-logo.png" alt="Divit Foundation Logo" id="divit-logo">
                 </div>
                 <div class="logo-text">
                     <span>DIVIT</span>
@@ -1095,7 +1132,8 @@
                     <p>Under our brand Borjhar Sports Club, we organize various sporting activities, especially cycling, running, and adventure sports. Our programs promote fitness, teamwork, and community bonding.</p>
                     <p>We host regular events, marathons, and adventure camps for all age groups.</p>
                     <div class="sports-logo">
-                        <i class="fas fa-running" style="font-size: 3rem; color: #4caf50;"></i>
+                        <img src="images/borjhar-logo.jpg" alt="Borjhar Sports Club Logo" id="borjhar-logo">
+                        <p>Borjhar Sports Club</p>
                         <h4>Borjhar Sports Club</h4>
                         <p>We Find Ways to Stay Active</p>
                     </div>
@@ -1366,7 +1404,7 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <div class="logo">
-                    <i class="fas fa-hands-helping" style="font-size: 2.5rem; color: white;"></i>
+                    <img src="images/divit-logo.png" alt="Divit Foundation Logo" id="divit-logo">
                 </div>
                 <div class="logo-text">
                     <span>DIVIT</span>
