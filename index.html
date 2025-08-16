@@ -85,6 +85,7 @@
              margin: 0 auto;
              padding: 0 20px;
              flex-wrap: nowrap;
+             position: relative;
         }
         
         /* Logo Styles */
@@ -816,20 +817,42 @@
 }
 
 @media (max-width: 768px) {
-    .header-container {
-    flex-wrap: wrap;
-    padding: 10px 15px;
+    /* Show mobile menu button */
+    .mobile-menu-btn {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
     
-}  
+    /* Hide regular navigation */
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    /* Other existing mobile styles */
+    .header-container {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
     
     .logo-container {
         order: 1;
         flex: 1;
         min-width: 200px;
-    }
-    
-    .mobile-menu-btn {
-        order: 2;
     }
     
     nav {
@@ -846,14 +869,12 @@
         font-size: 0.9rem;
     }
     
-    nav ul {
-        flex-direction: column;
-        gap: 0;
-    }
-    
     nav li {
         margin: 5px 0;
     }
+}
+    
+        }
 }
 
     nav ul.show {
@@ -866,7 +887,14 @@
     }
     
     .mobile-menu-btn {
-        display: block;
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1100;
+}
     }
     
     .hero-content h2 {
@@ -1312,13 +1340,20 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle
+               // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
+       const navMenu = document.getElementById('navMenu');
         
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
+      mobileMenuBtn.addEventListener('click', () => {
+     navMenu.classList.toggle('show');
+    
+    // Close menu when clicking a link
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('show');
         });
+    });
+});
         
         // Navigation Active State
         const navLinks = document.querySelectorAll('nav a');
