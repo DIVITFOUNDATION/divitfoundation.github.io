@@ -24,14 +24,12 @@
             --section7: linear-gradient(135deg, #5d4037 0%, #795548 100%);
             --section8: linear-gradient(135deg, #455a64 0%, #607d8b 100%);
         }
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Raleway', sans-serif;
         }
-        
         body {
             background-color: var(--light);
             color: var(--dark);
@@ -39,13 +37,11 @@
             line-height: 1.7;
             text-align: center;
         }
-        
         h1, h2, h3, h4, h5 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
             line-height: 1.3;
         }
-        
         /* Header Styles */
         header {
             position: fixed;
@@ -57,7 +53,6 @@
             padding: 15px 0;
             backdrop-filter: blur(10px);
         }
-        
         .header-container {
             display: flex;
             justify-content: space-between;
@@ -67,30 +62,25 @@
             padding: 0 30px;
             flex-wrap: wrap;
         }
-        
         .logo-container {
             display: flex;
             align-items: center;
             gap: 15px;
             max-width: 40%;
         }
-        
         .logo {
+            /* Removed background, border-radius, and shadow for transparency */
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--primary);
             width: 70px;
             height: 70px;
-            border-radius: 50%;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            /* No background or border-radius */
         }
-        
         .logo-text {
             display: flex;
             flex-direction: column;
         }
-        
         .logo-text span:first-child {
             font-size: 2.8rem;
             font-weight: 900;
@@ -103,7 +93,6 @@
             -webkit-text-fill-color: transparent;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
-        
         .logo-text span:last-child {
             font-size: 1.5rem;
             font-weight: 700;
@@ -112,12 +101,10 @@
             text-transform: uppercase;
             margin-top: -5px;
         }
-        
         nav {
             flex: 1;
             min-width: 60%;
         }
-        
         nav ul {
             display: flex;
             list-style: none;
@@ -126,11 +113,9 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        
         nav li {
             margin-left: 10px;
         }
-        
         nav a {
             text-decoration: none;
             color: var(--dark);
@@ -143,7 +128,6 @@
             overflow: hidden;
             white-space: nowrap;
         }
-        
         nav a::before {
             content: '';
             position: absolute;
@@ -154,22 +138,18 @@
             background: var(--accent);
             transition: width 0.4s ease;
         }
-        
         nav a:hover, nav a.active {
             color: var(--primary);
         }
-        
         nav a:hover::before, nav a.active::before {
             width: 100%;
         }
-        
         .mobile-menu-btn {
             display: none;
             font-size: 1.8rem;
             cursor: pointer;
             color: var(--primary);
         }
-        
         /* Section Styles */
         section {
             min-height: 100vh;
@@ -178,13 +158,11 @@
             flex-direction: column;
             justify-content: center;
         }
-        
         .section-container {
             max-width: 1200px;
             margin: 0 auto;
             width: 100%;
         }
-        
         .section-title {
             font-size: 3.5rem;
             margin-bottom: 50px;
@@ -193,7 +171,6 @@
             color: white;
             text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
         }
-        
         .section-title::after {
             content: '';
             position: absolute;
@@ -205,7 +182,6 @@
             background: var(--highlight);
             border-radius: 3px;
         }
-        
         /* Home Section */
         #home {
             background: var(--section1);
@@ -213,7 +189,6 @@
             position: relative;
             overflow: hidden;
         }
-        
         #home::before {
             content: '';
             position: absolute;
@@ -223,21 +198,18 @@
             height: 100%;
             background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
         }
-        
         .hero-content {
             max-width: 900px;
             margin: 0 auto;
             position: relative;
             z-index: 2;
         }
-        
         .hero-content h2 {
             font-size: 4.5rem;
             margin-bottom: 30px;
             text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
             animation: fadeInUp 1s ease;
         }
-        
         .hero-content p {
             font-size: 1.8rem;
             margin-bottom: 40px;
@@ -247,7 +219,6 @@
             margin-right: auto;
             animation: fadeInUp 1.2s ease;
         }
-        
         .cta-button {
             display: inline-block;
             background: var(--accent);
@@ -264,25 +235,21 @@
             position: relative;
             overflow: hidden;
         }
-        
         .cta-button:hover {
             background: transparent;
             border-color: var(--accent);
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(255, 111, 0, 0.5);
         }
-        
         /* About Section */
         #about {
             background: var(--section2);
         }
-        
         .about-content {
             display: flex;
             align-items: center;
             gap: 60px;
         }
-        
         .about-text {
             flex: 1;
             background: rgba(255, 255, 255, 0.9);
@@ -290,19 +257,16 @@
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
-        
         .about-text h3 {
             font-size: 2.2rem;
             margin-bottom: 25px;
             color: var(--primary);
         }
-        
         .about-text p {
             margin-bottom: 20px;
             font-size: 1.1rem;
             text-align: left;
         }
-        
         .about-image {
             flex: 1;
             border-radius: 20px;
@@ -310,7 +274,6 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
             height: 400px;
         }
-        
         .about-image img {
             width: 100%;
             height: 100%;
@@ -318,22 +281,18 @@
             display: block;
             transition: transform 0.8s ease;
         }
-        
         .about-image:hover img {
             transform: scale(1.05);
         }
-        
         /* Services Section */
         #services {
             background: var(--section3);
         }
-        
         .services-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 40px;
         }
-        
         .service-card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
@@ -344,7 +303,6 @@
             overflow: hidden;
             border: 1px solid rgba(0,0,0,0.05);
         }
-        
         .service-card::before {
             content: '';
             position: absolute;
@@ -355,34 +313,28 @@
             background: var(--accent);
             transition: width 0.5s ease;
         }
-        
         .service-card:hover {
             transform: translateY(-15px);
             box-shadow: 0 30px 50px rgba(0,0,0,0.2);
         }
-        
         .service-card:hover::before {
             width: 100%;
             opacity: 0.1;
         }
-        
         .service-icon {
             font-size: 3.5rem;
             margin-bottom: 25px;
             color: var(--accent);
         }
-        
         .service-card h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
             color: var(--primary);
         }
-        
         .service-card p {
             margin-bottom: 25px;
             font-size: 1.1rem;
         }
-        
         .sports-logo {
             margin-top: 25px;
             background: rgba(76, 175, 80, 0.1);
@@ -390,38 +342,32 @@
             border-radius: 15px;
             border-left: 5px solid var(--secondary);
         }
-        
         .sports-logo img {
             height: 100px;
             width: auto;
             max-width: 100%;
             margin-bottom: 15px;
         }
-        
         .sports-logo h4 {
             font-size: 1.6rem;
             color: var(--secondary);
             margin-bottom: 10px;
         }
-        
         .sports-logo p {
             font-size: 1.1rem;
             color: var(--dark);
             margin-bottom: 0;
             font-weight: 500;
         }
-        
         /* Projects Section */
         #projects {
             background: var(--section4);
         }
-        
         .projects-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 40px;
         }
-        
         .project-card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
@@ -429,54 +375,44 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        
         .project-card:hover {
             transform: translateY(-15px);
             box-shadow: 0 30px 50px rgba(0,0,0,0.2);
         }
-        
         .project-image {
             height: 200px;
             overflow: hidden;
         }
-        
         .project-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.8s ease;
         }
-        
         .project-card:hover .project-image img {
             transform: scale(1.1);
         }
-        
         .project-content {
             padding: 30px;
         }
-        
         .project-content h3 {
             font-size: 1.7rem;
             margin-bottom: 15px;
             color: var(--primary);
         }
-        
         .project-content p {
             margin-bottom: 20px;
             font-size: 1.1rem;
         }
-        
         /* Research Section */
         #research {
             background: var(--section5);
         }
-        
         .research-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 40px;
         }
-        
         .research-item {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
@@ -485,28 +421,23 @@
             transition: all 0.4s ease;
             border-left: 5px solid var(--accent);
         }
-        
         .research-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 25px 45px rgba(0,0,0,0.2);
         }
-        
         .research-item h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
             color: var(--primary);
         }
-        
         .research-item p {
             margin-bottom: 20px;
             font-size: 1.1rem;
         }
-        
         /* Gallery Section Styles */
         #gallery {
             background: var(--section6);
         }
-
         .gallery-filters {
             display: flex;
             justify-content: center;
@@ -514,7 +445,6 @@
             gap: 10px;
             margin-bottom: 30px;
         }
-
         .filter-btn {
             background: white;
             border: 2px solid var(--primary);
@@ -525,18 +455,15 @@
             font-weight: 600;
             transition: all 0.3s;
         }
-
         .filter-btn:hover, .filter-btn.active {
             background: var(--primary);
             color: white;
         }
-
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
         }
-
         .gallery-item {
             border-radius: 10px;
             overflow: hidden;
@@ -545,11 +472,9 @@
             height: 250px;
             position: relative;
         }
-
         .gallery-item:hover {
             transform: translateY(-5px);
         }
-
         .gallery-item img {
             width: 100%;
             height: 100%;
@@ -558,24 +483,20 @@
             transition: transform 0.5s;
             cursor: pointer;
         }
-
         .gallery-item:hover img {
             transform: scale(1.05);
         }
-
         .video-container {
             position: relative;
             width: 100%;
             height: 100%;
             overflow: hidden;
         }
-
         .video-container video {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-
         /* Lightbox Styles */
         .lightbox {
             display: none;
@@ -589,21 +510,18 @@
             background-color: rgba(0, 0, 0, 0.9);
             overflow: auto;
         }
-
         .lightbox-content {
             display: block;
             margin: 0 auto;
             max-width: 90%;
             max-height: 80vh;
         }
-
         .lightbox-caption {
             text-align: center;
             color: #fff;
             padding: 10px 0;
             font-size: 1.2rem;
         }
-
         .close-btn {
             position: absolute;
             top: 20px;
@@ -614,22 +532,18 @@
             transition: 0.3s;
             cursor: pointer;
         }
-
         .close-btn:hover {
             color: var(--accent);
         }
-        
         /* Contact Section */
         #contact {
             background: var(--section7);
         }
-        
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 50px;
         }
-        
         .contact-info {
             display: flex;
             flex-direction: column;
@@ -639,26 +553,22 @@
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
-        
         .contact-item {
             display: flex;
             align-items: flex-start;
             gap: 20px;
         }
-        
         .contact-icon {
             font-size: 1.8rem;
             color: var(--accent);
             min-width: 50px;
             text-align: center;
         }
-        
         .contact-text h4 {
             font-size: 1.5rem;
             margin-bottom: 10px;
             color: var(--primary);
         }
-        
         .contact-text p, .contact-text a {
             color: var(--dark);
             text-decoration: none;
@@ -666,29 +576,24 @@
             transition: color 0.3s;
             font-weight: 500;
         }
-        
         .contact-text a:hover {
             color: var(--accent);
         }
-        
         .map-container {
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
             height: 500px;
         }
-        
         .map-container iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
-        
         /* Payment Section */
         #payment {
             background: var(--section8);
         }
-        
         .payment-container {
             max-width: 700px;
             margin: 0 auto;
@@ -697,11 +602,9 @@
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
-        
         .payment-form .form-group {
             margin-bottom: 25px;
         }
-        
         .payment-form label {
             display: block;
             margin-bottom: 10px;
@@ -709,7 +612,6 @@
             font-size: 1.2rem;
             color: var(--primary);
         }
-        
         .payment-form input,
         .payment-form select {
             width: 100%;
@@ -720,14 +622,12 @@
             font-size: 1.1rem;
             transition: all 0.3s;
         }
-        
         .payment-form input:focus,
         .payment-form select:focus {
             border-color: var(--accent);
             box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.2);
             outline: none;
         }
-        
         .amount-options {
             display: flex;
             flex-wrap: wrap;
@@ -735,7 +635,6 @@
             margin-top: 15px;
             justify-content: center;
         }
-        
         .amount-option {
             padding: 12px 25px;
             background: var(--primary);
@@ -745,13 +644,11 @@
             transition: all 0.3s;
             font-weight: 600;
         }
-        
         .amount-option:hover {
             background: var(--accent);
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
         .payment-form button {
             width: 100%;
             padding: 18px;
@@ -766,20 +663,17 @@
             margin-top: 20px;
             box-shadow: 0 10px 25px rgba(255, 111, 0, 0.4);
         }
-        
         .payment-form button:hover {
             background: var(--primary);
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(255, 111, 0, 0.5);
         }
-        
         /* Footer */
         footer {
             background: var(--dark);
             color: white;
             padding: 50px 20px 30px;
         }
-        
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -787,36 +681,35 @@
             flex-direction: column;
             gap: 40px;
         }
-        
         .footer-logo {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 15px;
         }
-        
         .footer-logo .logo {
-            background: var(--accent);
+            /* Removed background for transparency */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
         }
-        
         .footer-logo .logo-text span:first-child {
             font-size: 2.5rem;
             background: linear-gradient(135deg, var(--accent) 0%, var(--highlight) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
         .footer-logo .logo-text span:last-child {
             color: var(--secondary);
             font-size: 1.3rem;
         }
-        
         .social-links {
             display: flex;
             justify-content: center;
             gap: 25px;
         }
-        
         .social-links a {
             display: flex;
             align-items: center;
@@ -829,18 +722,15 @@
             border-radius: 50%;
             transition: all 0.4s;
         }
-        
         .social-links a:hover {
             background: var(--accent);
             transform: translateY(-5px);
         }
-        
         .copyright {
             font-size: 1.1rem;
             opacity: 0.8;
             margin-top: 20px;
         }
-        
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -852,32 +742,26 @@
                 transform: translateY(0);
             }
         }
-        
         /* Responsive Design */
         @media (max-width: 1200px) {
             .hero-content h2 {
                 font-size: 4rem;
             }
         }
-        
         @media (max-width: 992px) {
             .about-content {
                 flex-direction: column;
             }
-            
             .about-image {
                 margin-top: 30px;
             }
-            
             .hero-content h2 {
                 font-size: 3.5rem;
             }
-            
             .section-title {
                 font-size: 3rem;
             }
         }
-        
         @media (max-width: 768px) {
             nav ul {
                 display: none;
@@ -893,96 +777,75 @@
                 gap: 0;
                 text-align: center;
             }
-            
             nav li {
                 width: 100%;
             }
-            
             nav a {
                 display: block;
                 width: 100%;
                 padding: 12px 0;
                 border-radius: 0;
             }
-            
             nav ul.show {
                 display: flex;
             }
-            
             nav li {
                 margin: 0;
             }
-            
             nav a {
                 display: block;
                 padding: 15px 20px;
                 border-radius: 0;
                 text-align: center;
             }
-            
             nav a::before {
                 display: none;
             }
-            
             .mobile-menu-btn {
                 display: block;
             }
-            
             .hero-content h2 {
                 font-size: 2.8rem;
             }
-            
             .hero-content p {
                 font-size: 1.5rem;
             }
-            
             .section-title {
                 font-size: 2.5rem;
             }
-            
             .contact-container {
                 grid-template-columns: 1fr;
             }
-            
             .map-container {
                 height: 400px;
             }
         }
-        
         @media (max-width: 576px) {
             .header-container {
                 padding: 0 15px;
             }
-            
             .logo-text span:first-child {
                 font-size: 2.2rem;
             }
-            
             .logo-text span:last-child {
                 font-size: 1.1rem;
             }
-            
             .hero-content h2 {
                 font-size: 2.3rem;
             }
-            
             .hero-content p {
                 font-size: 1.3rem;
             }
-            
             .section-title {
                 font-size: 2.2rem;
             }
-            
             .about-text, .contact-info, .payment-container {
                 padding: 30px;
             }
-            
             .cta-button {
                 padding: 15px 35px;
                 font-size: 1.1rem;
             }
-            
             .services-container, .projects-container, .research-content {
                 grid-template-columns: 1fr;
             }
@@ -994,8 +857,9 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
+                <!-- Replaced symbolic hands with Divit Foundation logo -->
                 <div class="logo">
-                    <i class="fas fa-hands-helping" style="font-size: 2.5rem; color: white;"></i>
+                    <img src="images/divit_logo.png" alt="Divit Foundation Logo" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="logo-text">
                     <span>DIVIT</span>
@@ -1019,7 +883,6 @@
             </nav>
         </div>
     </header>
-
     <!-- Home Section -->
     <section id="home">
         <div class="section-container">
@@ -1030,7 +893,6 @@
             </div>
         </div>
     </section>
-
     <!-- About Us Section -->
     <section id="about">
         <div class="section-container">
@@ -1048,7 +910,6 @@
             </div>
         </div>
     </section>
-
     <!-- Our Services Section -->
     <section id="services">
         <div class="section-container">
@@ -1063,7 +924,6 @@
                     <p>We provide comprehensive training and placement services to empower youth with market-relevant skills. Our programs include technical training, soft skills development, and job placement assistance.</p>
                     <p>Through partnerships with local industries, we ensure our trainees are job-ready and have access to meaningful employment opportunities.</p>
                 </div>
-                
                 <!-- Service 2 -->
                 <div class="service-card">
                     <div class="service-icon">
@@ -1073,7 +933,6 @@
                     <p>We organize seminars and conferences focused on academic research in various fields. Our events bring together scholars, researchers, and industry experts to share knowledge and foster collaboration.</p>
                     <p>We also publish an in-house journal that showcases cutting-edge research from the Northeast region.</p>
                 </div>
-                
                 <!-- Service 3 -->
                 <div class="service-card">
                     <div class="service-icon">
@@ -1083,7 +942,6 @@
                     <p>We conduct awareness seminars and conferences on sustainable waste management practices, with special focus on electronic waste (e-waste). Our initiatives educate communities about responsible disposal and recycling.</p>
                     <p>We also organize community clean-up drives and establish collection centers for hazardous waste.</p>
                 </div>
-                
                 <!-- Service 4 -->
                 <div class="service-card">
                     <div class="service-icon">
@@ -1093,7 +951,8 @@
                     <p>Under our brand Borjhar Sports Club, we organize various sporting activities, especially cycling, running, and adventure sports. Our programs promote fitness, teamwork, and community bonding.</p>
                     <p>We host regular events, marathons, and adventure camps for all age groups.</p>
                     <div class="sports-logo">
-                        <i class="fas fa-running" style="font-size: 3rem; color: #4caf50;"></i>
+                        <!-- Replaced running icon with Borjhar Sports Club logo -->
+                        <img src="images/borjhar_sports_club_logo.png" alt="Borjhar Sports Club Logo" style="height: 100px; width: auto; max-width: 100%;">
                         <h4>Borjhar Sports Club</h4>
                         <p>We Find Ways to Stay Active</p>
                     </div>
@@ -1101,7 +960,6 @@
             </div>
         </div>
     </section>
-
     <!-- Our Projects Section -->
     <section id="projects">
         <div class="section-container">
@@ -1117,7 +975,6 @@
                         <p>We've established vocational training centers across Assam that offer courses in computer skills, tailoring, handicrafts, and hospitality.</p>
                     </div>
                 </div>
-                
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-image">
@@ -1128,7 +985,6 @@
                         <p>Our comprehensive program for responsible e-waste disposal includes collection centers, awareness campaigns, and partnerships with recycling facilities.</p>
                     </div>
                 </div>
-                
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
@@ -1142,7 +998,6 @@
             </div>
         </div>
     </section>
-
     <!-- Research Section -->
     <section id="research">
         <div class="section-container">
@@ -1153,13 +1008,11 @@
                     <p>Our in-house research journal publishes peer-reviewed articles on sustainable development, environmental science, social issues, and community development in Northeast India. We provide a platform for researchers to share their findings and contribute to academic discourse.</p>
                     <p>The journal is published quarterly and is available both in print and digital formats.</p>
                 </div>
-                
                 <div class="research-item">
                     <h3>Research Conferences</h3>
                     <p>We host annual research conferences that bring together scholars, practitioners, and policymakers to discuss pressing issues facing our region. These conferences feature keynote speakers, paper presentations, and panel discussions on topics ranging from environmental conservation to socioeconomic development.</p>
                     <p>Our next conference is scheduled for November 2023 with the theme "Sustainable Futures for Northeast India."</p>
                 </div>
-                
                 <div class="research-item">
                     <h3>Community-Based Research</h3>
                     <p>We conduct field research in collaboration with local communities to understand their needs and develop context-specific solutions. Our participatory research approach ensures that community voices are central to our work.</p>
@@ -1168,12 +1021,10 @@
             </div>
         </div>
     </section>
-
    <!-- Gallery Section -->
 <section id="gallery">
     <div class="section-container">
         <h2 class="section-title">Gallery</h2>
-        
         <!-- Gallery Navigation -->
         <div class="gallery-filters">
             <button class="filter-btn active" data-filter="all">All</button>
@@ -1182,7 +1033,6 @@
             <button class="filter-btn" data-filter="sports">Sports</button>
             <button class="filter-btn" data-filter="videos">Videos</button>
         </div>
-        
         <!-- Gallery Grid -->
         <div class="gallery-grid">
             <!-- Images will be added here -->
@@ -1211,7 +1061,6 @@
             </div>
             <!-- Add more images/videos here -->
         </div>
-        
         <!-- Lightbox Modal -->
         <div class="lightbox">
             <span class="close-btn">&times;</span>
@@ -1220,7 +1069,6 @@
         </div>
     </div>
 </section>
-   
     <!-- Contact Us Section -->
     <section id="contact">
         <div class="section-container">
@@ -1236,7 +1084,6 @@
                             <p>Azara, Guwahati, Assam, India - 781017</p>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone-alt"></i>
@@ -1246,7 +1093,6 @@
                             <p>+91-9401119961</p>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
@@ -1256,7 +1102,6 @@
                             <a href="mailto:divitfoundation.india@gmail.com">divitfoundation.india@gmail.com</a>
                         </div>
                     </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-clock"></i>
@@ -1267,14 +1112,12 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14321.18705928743!2d91.6602947!3d26.1863075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5b0a0a8a5a5f%3A0x8f9a9a9a9a9a9a9a!2sAzara%2C%20Guwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1629999999999!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Payment Section -->
     <section id="payment">
         <div class="section-container">
@@ -1285,17 +1128,14 @@
                         <label for="name">Full Name</label>
                         <input type="text" id="name" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone">
                     </div>
-                    
                     <div class="form-group">
                         <label for="amount">Donation Amount (₹)</label>
                         <input type="number" id="amount" min="100" value="500" required>
@@ -1306,7 +1146,6 @@
                             <div class="amount-option" data-amount="2000">₹2000</div>
                         </div>
                     </div>
-                    
                     <div class="form-group">
                         <label for="purpose">Purpose of Donation</label>
                         <select id="purpose">
@@ -1317,19 +1156,17 @@
                             <option value="research">Research Initiatives</option>
                         </select>
                     </div>
-                    
                     <button type="submit">Make a Donation</button>
                 </form>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
                 <div class="logo">
-                    <i class="fas fa-hands-helping" style="font-size: 2.5rem; color: white;"></i>
+                    <img src="images/divit_logo.png" alt="Divit Foundation Logo" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="logo-text">
                     <span>DIVIT</span>
@@ -1347,49 +1184,40 @@
             <p class="copyright">© 2023 Divit Foundation. All Rights Reserved.</p>
         </div>
     </footer>
-
     <script>
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navMenu = document.getElementById('navMenu');
-        
         mobileMenuBtn.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });
-        
         // Navigation Active State
         const navLinks = document.querySelectorAll('nav a');
-        
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.forEach(item => item.classList.remove('active'));
                 link.classList.add('active');
-                
                 // Close mobile menu after click
                 if (navMenu.classList.contains('show')) {
                     navMenu.classList.remove('show');
                 }
             });
         });
-        
         // Gallery Lightbox Functionality
         document.querySelectorAll('.gallery-item img').forEach(img => {
             img.addEventListener('click', function() {
                 const lightbox = document.querySelector('.lightbox');
                 const lightboxImg = document.getElementById('lightbox-img');
                 const caption = document.querySelector('.lightbox-caption');
-                
                 lightbox.style.display = 'block';
                 lightboxImg.src = this.src;
                 caption.textContent = this.alt;
             });
         });
-
         // Close lightbox
         document.querySelector('.close-btn').addEventListener('click', function() {
             document.querySelector('.lightbox').style.display = 'none';
         });
-
         // Close lightbox when clicking outside image
         window.addEventListener('click', function(event) {
             const lightbox = document.querySelector('.lightbox');
@@ -1397,7 +1225,6 @@
                 lightbox.style.display = 'none';
             }
         });
-
         // Gallery Filtering
         document.querySelectorAll('.filter-btn').forEach(button => {
             button.addEventListener('click', function() {
@@ -1405,13 +1232,10 @@
                 document.querySelectorAll('.filter-btn').forEach(btn => {
                     btn.classList.remove('active');
                 });
-                
                 // Add active class to clicked button
                 this.classList.add('active');
-                
                 const filter = this.getAttribute('data-filter');
                 const galleryItems = document.querySelectorAll('.gallery-item');
-                
                 galleryItems.forEach(item => {
                     if (filter === 'all' || item.classList.contains(filter)) {
                         item.style.display = 'block';
@@ -1421,21 +1245,17 @@
                 });
             });
         });
-        
         // Scroll Spy for Navigation
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
             let current = '';
-            
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                
                 if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
                     current = section.getAttribute('id');
                 }
             });
-            
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
@@ -1443,53 +1263,43 @@
                 }
             });
         });
-        
         // Amount Option Selection
         const amountOptions = document.querySelectorAll('.amount-option');
         const amountInput = document.getElementById('amount');
-        
         amountOptions.forEach(option => {
             option.addEventListener('click', () => {
                 amountInput.value = option.getAttribute('data-amount');
-                
                 // Remove active class from all options
                 amountOptions.forEach(item => item.classList.remove('active'));
                 // Add active class to clicked option
                 option.classList.add('active');
             });
         });
-        
         // Form Submission
         const paymentForm = document.querySelector('.payment-form');
-        
         paymentForm.addEventListener('submit', (e) => {
             e.preventDefault();
             alert('Thank you for your donation! You will be redirected to the payment gateway.');
             // In a real implementation, this would redirect to a payment processor
         });
-        
         // Animation on scroll
         const animateOnScroll = () => {
             const elements = document.querySelectorAll('.service-card, .project-card, .research-item');
-            
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.3;
-                
                 if (elementPosition < screenPosition) {
                     element.style.opacity = 1;
                     element.style.transform = 'translateY(0)';
                 }
             });
         };
-        
         // Set initial state for animation
         document.querySelectorAll('.service-card, .project-card, .research-item').forEach(el => {
             el.style.opacity = 0;
             el.style.transform = 'translateY(40px)';
             el.style.transition = 'all 0.8s ease';
         });
-        
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('load', animateOnScroll);
     </script>
